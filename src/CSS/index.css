@@ -1,0 +1,24 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background: url("navbg.jpg");
+  background-size: cover;
+  margin-bottom: 6.5px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  list-style: none;
+  margin-left: 300px;
+  color: black;
+}
+
+ul li{
+padding: 80px;
+}

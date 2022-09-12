@@ -14,6 +14,8 @@ export default function Nav() {
                 </div>
             <li>Blog</li>
             <li>Account</li>
+            <li>Contact Us</li>
+            <li>Help</li>
         </ul>
         </nav >
     )

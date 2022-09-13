@@ -9,3 +9,35 @@
   .containS img{
     padding: 15px 15px 0px 15px;
   }
+
+.slideS{
+  background: url("../img/schoolBG.jpg");
+  background-size: cover;
+}
+.slideS span{
+  padding-left: 250px;
+  font-size: 60px;
+  margin-top: 200px;
+  filter: drop-shadow(8px 8px 8px rgb(255, 234, 0));
+  color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: change 3s ease-in 0s infinite ;
+}
+.slideS img{
+  animation: change 3s ease-in 0s infinite ;
+  filter: drop-shadow(8px 8px 8px rgb(255, 183, 0));
+  height: 200px;
+}
+
+@keyframes change {
+  0%{
+    filter: drop-shadow(8px 8px 8px rgb(255, 234, 0));
+  }
+  50%{
+    filter: drop-shadow(8px 8px 8px rgb(255, 155, 6));
+  }
+  100%{
+    filter: drop-shadow(8px 8px 8px rgb(255, 234, 0));
+  }
+}

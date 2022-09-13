@@ -1,0 +1,11 @@
+.containG{
+    height: 340px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.174);
+    border-radius: 5px;
+    font-family:Josefin Sans;
+    margin: 0px 10px;
+  }
+  .containG img{
+    padding: 15px 15px 0px 15px;
+  }

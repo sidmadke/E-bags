@@ -8,8 +8,6 @@ export default function SchoolRow(){
             <SchoolContainer/>
             <SchoolContainer/>
             <SchoolContainer/>
-            <SchoolContainer/>
-            <SchoolContainer/>
         </div>
     )
 }

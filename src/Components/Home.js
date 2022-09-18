@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <Slider />
-            <div className='Title'>Explore Items</div>
+            <div className='Title'>COMING SOON...</div>
         </>
     )
 }

@@ -5,11 +5,38 @@
     border-radius: 10px;
     font-family:Josefin Sans;
     margin: 0px 10px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.192);
+}
+.containSl:hover{
+  transform: rotateX(7deg) translateY(-6px);
 }
 .containSl img{
       margin-bottom: 50px;
     padding: 60px 0px 0px 0px;
   }
+
+.containSl .details span{
+  padding-left: 85px;
+}
 .rowSl{
     padding-left: 330px;
+}
+.slideSl p{
+  font-size: 120px;
+  margin-top: 120px;
+  margin-left: 70px;
+  width: 64%;
+}
+.slideSl h2{
+  position: relative;
+  /* height: 50px; */
+  top: 410px;
+  right: 380px;
+  /* padding: 15px; */
+  animation: change2 2s ease-in 0s infinite ;
+  font-family:'Arial Narrow Bold', sans-serif;
+  width: 40%;
+  text-align: start;
+  font-size: 24px;
 }

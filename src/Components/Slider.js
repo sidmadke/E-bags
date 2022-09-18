@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function Slider(){
     return(
@@ -6,7 +6,7 @@ export default function Slider(){
             <img src={require("../img/slingbag.png")} height="70%"></img>
             <span>Now available</span>
             <p>New Arrivals</p>
-            <button className="BuyNow">Buy Now!!</button>
+            <button className="BuyNow"><Link to="./sling">Buy Now</Link></button>
         </div>
     )
 }

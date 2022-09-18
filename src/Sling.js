@@ -1,12 +1,12 @@
 import React from 'react';
 import './CSS/index.css'
-import Slider from './Components/Slider';
+import SlingSlider from './Components/SlingSlide';
 import SlingRow from './Components/SlingRow';
 
 export default function Sling() {
   return (
     <>
-      <Slider />
+      <SlingSlider />
       <div className='Title'>Explore Items</div>
       <SlingRow />
       <SlingRow />

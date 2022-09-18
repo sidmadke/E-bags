@@ -5,7 +5,25 @@
     border-radius: 5px;
     font-family:Josefin Sans;
     margin: 0px 10px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.192);
   }
   .containG img{
     padding: 15px 15px 0px 15px;
   }
+
+ .rowG{
+    padding-left: 580px;
+  }
+.containG:hover{
+  transform: rotateX(7deg) translateY(-6px);
+}
+
+.slideG{
+  background: url("../img/Gymbg33.jpg");
+  background-size: cover;
+}
+
+.slideS img {
+  filter: drop-shadow(8px 8px 8px rgba(255, 255, 255, 0.806));
+}

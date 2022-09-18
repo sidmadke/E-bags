@@ -1,13 +1,13 @@
 import React from 'react';
 import './CSS/index.css'
 import './CSS/gym.css'
-import Slider from './Components/Slider';
+import GymSlider from './Components/GymSlide';
 import GymRow from './Components/GymRow';
 
 export default function Gym() {
   return (
     <>
-      <Slider />
+      <GymSlider />
       <div className='Title'>Explore Items</div>
       <GymRow />
       <GymRow />

@@ -16,8 +16,8 @@ export default function Navbar() {
                     </div>
                 </div>
             <li>Blog</li>
-            <li>Account</li>
-            <li>Contact Us</li>
+            <li><NavLink to="/Account">Account</NavLink></li>
+            <li><NavLink to="/Contact">Contact Us</NavLink></li>
             <li>Help</li>
         </ul>
         </nav >

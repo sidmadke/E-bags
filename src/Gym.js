@@ -8,7 +8,7 @@ export default function Gym() {
   return (
     <>
       <GymSlider />
-      <div className='Title'>Explore Items</div>
+      <div id='Title'>Explore Items</div>
       <GymRow />
       <GymRow />
       <GymRow />

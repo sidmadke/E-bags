@@ -1,0 +1,165 @@
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -200%;
+    }
+    90%{
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+/* #slider figure slides {float: right; } */
+#slider figure {
+    position: relative;
+    display: flex;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slidy infinite; 
+}
+
+.slides {
+    height: 550px;
+    background: url("../img/imagebg.png");
+    background-size: cover;
+}
+
+.slide {
+    display: flex;
+    height: 550px;
+    background-size: cover;
+    margin-left: 200px;
+}
+
+.slide img {
+    margin-top: 130px;
+    margin-left: 0px;
+}
+
+.slide span {
+    position:absolute;
+    font-family: Moon Dance;
+    height: 60px;
+    width: 213px;
+    text-align: left;
+    color: #ddd;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 560px;
+    margin-bottom: 0px;
+}
+
+.slide p {
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 140px;
+    width: 350px;
+    padding-top: 150px;
+    height: 250px;
+    margin-left: 665px;
+}
+
+.slide:nth-child(2){
+    margin-left: 700px;
+}
+.slide:nth-child(2) .BuyNow{
+    top: 250px;
+    right: 250px;
+}
+.slide:nth-child(2) img{
+    margin-top: 90px;
+}
+.slide:nth-child(3){
+    margin-left: 880px;
+}
+.slide:nth-child(3) .BuyNow{
+    right: 250px;
+}
+.slide:nth-child(4) .BuyNow{
+    right: 150px;
+}
+.slide:nth-child(4){
+    margin-left: 980px;
+}
+/* .slide2 {
+    display: flex;
+    height: 550px;
+    background-size: cover;
+}
+
+.slide2 img {
+    margin-top: 130px;
+    margin-left: 80px;
+}
+
+.slide2 span {
+    font-family: Moon Dance;
+    text-align: right;
+    color: #ddd;
+    font-size: 72px;
+    margin-top: 154px;
+    margin-bottom: 0px;
+}
+
+.slide2 p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 100px;
+    margin-top: 220px;
+} */
+
+.BuyNow {
+    position: relative;
+    height: 70px;
+    width: 190px;
+    background: none;
+    /* background-color: rgba(255, 213, 0, 0.806);
+    border: none;
+    border-radius: 10px; */
+    top: 350px;
+    right: 420px;
+    /* padding: 12px; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.BuyNow img{
+    margin: 0;
+    padding: 0;
+}
+
+.BuyNow a {
+    text-decoration: none;
+    color: black;
+}

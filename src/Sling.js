@@ -7,7 +7,7 @@ export default function Sling() {
   return (
     <>
       <SlingSlider />
-      <div className='Title'>Explore Items</div>
+      <div id='Title'>Explore Items</div>
       <SlingRow />
       <SlingRow />
       <SlingRow />

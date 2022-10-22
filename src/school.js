@@ -8,7 +8,7 @@ export default function School() {
   return (
     <>
       <SchoolSlider/>
-      <div className='Title'>Explore Items</div>
+      <div id='Title'>Explore Items</div>
       <Row />
       <Row />
       <Row />

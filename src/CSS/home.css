@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,200..700,0,0");
+
+.trending {
+  --max-width: 80rem;
+  --margin: 2rem;
+  --gutter: 2px;
+  --font: Fraunces, serif;
+  --hue: 570deg;
+  --background: hsl(var(--hue) 20% 94%);
+  --background-alt: hsl(var(--hue) 20% 100%);
+  --text: hsl(var(--hue) 10% 100%);
+
+  font-family: var(--font);
+  font-size: min(
+    120%,
+    5vw
+  ); /* Scale text down to avoid reflow errors on VERY small screens */
+  line-height: 1.25;
+  color:rgb(255, 225, 0);
+  background: var(--background);
+  padding-top: 150px;
+}
+
+.trending,
+main,
+article {
+  container-type: inline-size;
+}
+
+/* Query units! */
+main h1,
+.product-price {
+  font-size: max(1.25rem, 12cqi - 1rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  mix-blend-mode: multiply;
+}
+
+/* Layout */
+main {
+  width: min(100% - (var(--margin) * 2), var(--max-width));
+  margin: var(--margin) auto;
+  filter: drop-shadow(0 0.33rem 0.33rem hsl(var(--hue) 50% 90%));
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 2rem;
+  background: var(--background-alt);
+  border-radius: 0.33rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+}
+.product:nth-child(7n-6) {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+.product img {
+    display: block;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    width: 300px;
+    height: calc(400px - 0.8rem);
+    object-fit: cover;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.product:nth-child(1) img {
+  width: 100%;
+  height: calc(100% - 0.8rem);
+}
+.product:nth-child(8) img {
+  width: 100%;
+  height: calc(100% - 13rem);
+}
+.product-name {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  align-self: end;
+  margin-left: 1rem;
+  z-index: 5;
+}
+.product-price {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  font-weight: 100;
+  margin: 0 1rem;
+  align-self: end;
+  text-align: right;
+  opacity: 0.8;
+}
+.product-category {
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  margin: 0.5rem 1rem 1rem;
+  line-height: 1.2;
+  opacity: 0.5;
+}
+
+.product-list {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr;
+  gap: var(--gutter);
+}
+@media (min-width: 50em) {
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+  .product {
+    margin-bottom: 0;
+  }
+}

@@ -28,15 +28,37 @@
   margin-left: 70px;
   width: 64%;
 }
-.slideSl h2{
-  position: relative;
+.slideSl a{
+  position: absolute;
   /* height: 50px; */
-  top: 410px;
-  right: 380px;
+  top: 540px;
+  right: 200px;
   /* padding: 15px; */
   animation: change2 2s ease-in 0s infinite ;
   font-family:'Arial Narrow Bold', sans-serif;
-  width: 40%;
+  width: 30%;
   text-align: start;
-  font-size: 24px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.slideSl{
+  display: flex;
+  height: 550px;
+  background: url("../img/imagebg.png");
+    background-size: cover;
+}
+.slideSl img{
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.slideSl p{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 140px;
+  width: 350px;
+  padding-top: 0px;
+  height: 250px;
+  margin-left: 765px;
 }

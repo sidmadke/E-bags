@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom"
-import "../CSS/index.css"
+import "../CSS/navbar.css"
 
 export default function Navbar() {
     return (
         <nav>
-            <img src={require("../img/thoratbags white.png")} width="180px" alt="LOGO" />
+            <NavLink to="/"><img src={require("../img/thoratbags white.png")} width="180px" alt="LOGO" /></NavLink>
             <ul>
                 <li><NavLink to="/">Home</NavLink></li>
                 <div className="dropdown">

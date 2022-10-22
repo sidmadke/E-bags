@@ -18,6 +18,8 @@
 }
 
 .slideS {
+  display: flex;
+  height: 550px;
   background: url("../img/Schoolbg3.jpg");
   background-size: cover;
 }
@@ -43,12 +45,12 @@
   margin-left: 100px;
 }
 
-.slideS p{
+.slideS p {
   font-family: 'Dosis', sans-serif;
   font-size: 50px;
   margin-top: 2px;
   color: rgb(222, 4, 4);
-  animation: change2 2s ease-in 0s infinite ;
+  animation: change2 2s ease-in 0s infinite;
   font-weight: 600;
   font-style: normal;
 }
@@ -66,18 +68,19 @@
     filter: drop-shadow(8px 8px 8px rgba(255, 213, 0, 0.806));
   }
 }
+
 @keyframes change2 {
   0% {
-    color:rgba(255, 213, 0, 0.806);
-    filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.806));
+    color: rgba(255, 213, 0, 0.806);
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.806));
   }
 
   50% {
-    color:white;
+    color: white;
   }
 
   100% {
-    color:rgba(255, 213, 0, 0.806);
-    filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.806));
+    color: rgba(255, 213, 0, 0.806);
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.806));
   }
 }

@@ -20,10 +20,43 @@
 }
 
 .slideG{
+  display: flex;
+  height: 550px;
   background: url("../img/Gymbg33.jpg");
   background-size: cover;
+}
+
+.slideG img{
+  filter: drop-shadow(8px 8px 8px rgba(255, 255, 255, 0.806));
+  height: 250px;
+  margin-top: 160px;
+  margin-left: 100px;
+}
+
+.slideG p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+  margin-top: 2px;
+  color: rgb(222, 4, 4);
+  animation: change2 2s ease-in 0s infinite ;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.slideG span{
+  padding-left: 250px;
+  font-size: 60px;
+  margin-top: 200px;
+  /* filter: drop-shadow(8px 8px 8px rgb(0, 0, 0)); */
+  color: rgb(255, 255, 255);
+  /* font-weight: bold; */
+  font-family: 'Dosis', sans-serif;
+  /* animation: change2 5s ease-in 0s infinite; */
+  font-style: italic;
+  text-align: right;
 }
 
 .slideS img {
   filter: drop-shadow(8px 8px 8px rgba(255, 255, 255, 0.806));
 }
+

@@ -6,7 +6,7 @@ export default function Contact() {
         <div className="Con">
             <div className="form_main">
                 <div className="form">
-                    <h1>Contact Form</h1>
+                    <h1 className="h1">Contact Form</h1>
                     <br />
                     <form action="javascript:sendmail()" method="post">
                         <div className="field">

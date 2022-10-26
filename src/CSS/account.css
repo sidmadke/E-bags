@@ -22,8 +22,9 @@
     background: url("../img/bg11.jpg");
     background-size: cover;
     height: 501px;
+    /* margin-top: 200px; */
     margin: 0;
-    padding: 61px;
+    padding: 93px 61px 61px 61px;
   }
   
   .form__title {

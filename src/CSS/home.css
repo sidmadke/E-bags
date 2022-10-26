@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,200..700,0,0");
-
+*{
+  text-decoration: none;
+  /* color: rgba(255, 234, 0, 0.84); */
+}
 .trending {
   --max-width: 80rem;
   --margin: 2rem;
@@ -16,7 +19,7 @@
     5vw
   ); /* Scale text down to avoid reflow errors on VERY small screens */
   line-height: 1.25;
-  color:rgb(255, 225, 0);
+  color:rgba(255, 234, 0, 0.84);
   background: var(--background);
   padding-top: 150px;
 }
@@ -25,6 +28,8 @@
 main,
 article {
   container-type: inline-size;
+  text-decoration: none;
+  color: rgba(255, 234, 0, 0.84);
 }
 
 /* Query units! */
@@ -35,6 +40,7 @@ main h1,
   line-height: 1;
   margin: 0;
   mix-blend-mode: multiply;
+  color: rgba(255, 234, 0, 0.84);
 }
 
 /* Layout */
@@ -42,6 +48,7 @@ main {
   width: min(100% - (var(--margin) * 2), var(--max-width));
   margin: var(--margin) auto;
   filter: drop-shadow(0 0.33rem 0.33rem hsl(var(--hue) 50% 90%));
+  text-decoration: none;
 }
 .product {
   display: grid;
@@ -49,6 +56,7 @@ main {
   grid-template-rows: auto auto 2rem;
   background: var(--background-alt);
   border-radius: 0.33rem;
+  color: rgba(255, 234, 0, 0.84);
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   padding: 20px;
@@ -83,6 +91,7 @@ main {
   align-self: end;
   margin-left: 1rem;
   z-index: 5;
+  color: rgba(255, 234, 0, 0.84);
 }
 .product-price {
   grid-row-start: 2;
@@ -99,6 +108,7 @@ main {
   margin: 0.5rem 1rem 1rem;
   line-height: 1.2;
   opacity: 0.5;
+  color: rgba(255, 234, 0, 0.84);
 }
 
 .product-list {

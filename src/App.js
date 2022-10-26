@@ -6,6 +6,7 @@ import School from './school';
 import Account from './Account';
 import Sling from './Sling';
 import Contact from './Contact';
+import Details from './Details';
 // import Explore from './components/Explore';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 				<Route path="/Sling" element={<Sling />} />
 				<Route path="/Account" element={<Account />} />
 				<Route path="/Contact" element={<Contact />} />
+				<Route path="/Details" element={<Details />} />
 			</Routes>
 		</div> 
 	);
